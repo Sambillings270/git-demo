@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guest Post Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="logo">Guest-Post Marketplace</h1>
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Find guest-post sites fast.</h2>
+      <p>Search and filter by DA/DR, traffic, spam score, price and country.</p>
+    </section>
+
+    <section class="controls">
+      <input id="search" class="input" type="text" placeholder="Search domain, niche, country…" />
+
+      <select id="countryFilter" class="input">
+        <option value="">All countries</option>
+      </select>
+
+      <select id="sort" class="input">
+        <option value="">Sort</option>
+        <option value="priceAsc">Price (Low → High)</option>
+        <option value="priceDesc">Price (High → Low)</option>
+        <option value="trafficDesc">Traffic (High → Low)</option>
+      </select>
+    </section>
+
+    <section class="meta">
+      <div id="count">Loading…</div>
+    </section>
+
+    <section id="results" class="results"></section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Sambillings270 • Guest-post marketplace (static)</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
